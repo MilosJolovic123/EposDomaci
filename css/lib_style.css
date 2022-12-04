@@ -4,29 +4,37 @@ body{
 }
 .nav{
     background-color: #F58807;
-    height: 60px;
+    height: 50px;
     margin: 0px;
-    display: flex;
-}
-
-.meni{
-    height: 60px;
-}
-
-.icon{
-    padding: 10px;
-    height: 40px;
-    width: 40px;
-}
-
-.elements{
     display: flex;
     align-items: center;
 }
 
+.meni{
+    height: inherit;
+}
+
+.icon{
+    padding: 10px;
+    height: 80%;
+    width: 40px;
+}
+
+.elements{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
 #src_bar{
     box-sizing: border-box;
-    height: 40px;
+    height: 60%;
+    width: 50%;
+    margin-right: 50px;
+    border-radius: 30px;
 }
 
 .logo{
