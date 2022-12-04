@@ -2,43 +2,43 @@ body{
     margin: 0px;
     background-color: #252525;
 }
+
 .nav{
-    background-color: #F58807;
-    height: 50px;
-    margin: 0px;
-    display: flex;
-    align-items: center;
+background-color: #3d3a3a;
+height: 50px;
+margin: 0px;
+display: flex;
+align-items: center;
 }
-
-
 
 .icon{
     padding: 10px;
     height: 80%;
     width: 40px;
 }
-
 .elements{
-    width: 100%;
     height: inherit;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    width: 100%;
 }
 
-#src_bar{
+#search_bar{
     box-sizing: border-box;
     height: 60%;
     width: 50%;
     margin-right: 50px;
     border-radius: 30px;
-   border-width: 0px;
+border-width: 0px;
+padding-left: 1%;
+
 }
 
 .logo{
     font-family: fantasy;
     font-size: 40px;
     font-weight: bold;
-    color: #252525;
+    color: #f58807;
 }
+
