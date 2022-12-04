@@ -1,0 +1,20 @@
+body{
+    margin: 0px;
+    background-color: #252525;
+}
+.nav{
+    background-color: #F58807;
+    height: 60px;
+    margin: 0px;
+    display: flex;
+}
+
+.meni{
+    height: 60px;
+}
+
+.meni_icon{
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+}
