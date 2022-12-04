@@ -1,0 +1,62 @@
+.content {
+    display: flex;
+    align-content: stretch;
+    height: 100vh;
+}
+
+.left {
+    height: 100%;
+    width: 20%;
+    border-right: 1px solid black;
+}
+
+.baner {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10%;
+}
+
+.ocena {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 5%;
+    \background-color: aqua;
+}
+
+.ocena>.icon {
+    height: 80%;
+    width: auto;
+    padding: 0;
+}
+
+
+.line {
+    display: flex;
+    align-items: center;
+    background-color: rgb(192, 192, 192);
+    width: 80%;
+    height: 50%;
+    border-radius: 15px;
+}
+
+.percent {
+    background-color: rgb(116, 194, 92);
+    color: white;
+    height: 100%;
+    text-align: right;
+    border-radius: 15px;
+    font-size: 80%;
+    font-weight: bold;
+}
+
+.tom{
+    width: 69%;
+}
+
+.imdb{
+    width: 83%;
+}
