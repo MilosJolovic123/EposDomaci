@@ -1,0 +1,31 @@
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+.film{
+display: flex;
+align-items: center;
+justify-content: center;
+  height: 50vh;
+  width: 16%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  min-width: 16%;
+    
+}
+.film>a{
+   visibility: hidden;
+position: absolute;
+}
+.film>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+   
+}
