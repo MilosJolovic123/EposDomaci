@@ -38,18 +38,16 @@
 }
 
 .title {
-    color: beige;
+    color: #f58807;
     font-weight: 500;
     font-size: 4vh;
     text-align: center;
-    color: #f58807;
 }
 
 .text{
-    color: beige;
+    color: #f58807;
     font-weight: 500;
     font-size: 2vh;
-    color: #f58807;
 }
 
 .left>.text {
