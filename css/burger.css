@@ -1,0 +1,47 @@
+.burger{
+    width: 21%;
+    height: 100%;
+    position: fixed;
+    z-index: 5;
+    top: 50px;
+    left: 0;
+    background-color: #252525;
+    animation: ease-in;
+    transition: all 0.3s;
+}
+
+.burger.hide{
+    visibility: hidden;
+    height: 0%;
+}
+.hide{
+    visibility: hidden;
+}
+
+.textHolder{
+    padding: 2vh;
+    border: 2px solid #f58807;
+    margin-bottom: -2px;
+    transition: all 0.2s;
+}
+
+.textHolder.hide{
+    visibility: hidden;
+    height: 0%;
+    border: 0px;
+}
+
+.textHolder > a{
+    color: #f58807;
+    font-weight: 500;
+    font-size: 3vh;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+@media (max-width: 811px) and (orientation: portrait) {
+    .burger{
+        width: 100%;
+    }
+}

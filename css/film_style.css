@@ -157,12 +157,14 @@ iframe {
         width: 100%;
         border-bottom: 1px solid black;
         margin-bottom: 2%;
-        position: relative;
+        position: initial;
         top: 0px;
+        z-index: 0;
     }
 
     .content {
         flex-wrap: wrap;
+        margin-top: 50px;
     }
 
     .video {
