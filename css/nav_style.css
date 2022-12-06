@@ -9,7 +9,19 @@ background-color: #3d3a3a;
 height: 50px;
 margin: 0px;
 display: flex;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
 align-items: center;
+}
+
+.logotip{
+    background-color: #3d3a3a;
+    height: 50px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
 }
 
 .icon{
