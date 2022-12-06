@@ -13,7 +13,7 @@
 .left {
     height: calc(100% - 50px);
     width: 20%;
-    /* border-right: 1px solid black; */
+    /* aborder-right: 1px solid black; */
     position: fixed;
     top: 50px;
     bottom: 0;
@@ -37,7 +37,7 @@
 .title {
     color: beige;
     font-weight: bold;
-    font-size: 3vh;
+    font-size: 4vh;
     text-align: center;
     text-shadow: 10px orange;
 }
@@ -132,11 +132,12 @@ iframe {
 .person > .title{
     margin: auto;
     padding: auto;
+    font-size: 100%;
     margin-left: 3vh;
 }
 .imgHolder{
     display: inline-block;
-    width: 20vh;
+    width: 20vh ;
     height: 20vh;
     border-radius: 50%;
     overflow: hidden;
