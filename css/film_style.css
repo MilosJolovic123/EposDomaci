@@ -1,20 +1,56 @@
+.fix {
+    position: fixed;
+}
+
 .content {
     display: flex;
     align-content: stretch;
-    height: 100vh;
+    /* flex-wrap: wrap; */
+    /*height:100vh;*/
 }
 
+
 .left {
-    height: 100%;
+    height: calc(100% - 50px);
     width: 20%;
-    border-right: 1px solid black;
+    /* aborder-right: 1px solid black; */
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+}
+
+.main {
+    width: 80%;
+    margin-left: 20%;
+    margin-top: 50px;
 }
 
 .baner {
     box-sizing: border-box;
     width: 100%;
     height: auto;
-    margin-bottom: 10%;
+}
+
+.title {
+    color: beige;
+    font-weight: bold;
+    font-size: 4vh;
+    text-align: center;
+    text-shadow: 10px orange;
+}
+
+.text{
+    color: beige;
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+.left>.text {
+    display: flex;
+    justify-content: space-around;
 }
 
 .ocena {
@@ -24,7 +60,7 @@
     align-items: center;
     width: 100%;
     height: 5%;
-    \background-color: aqua;
+    /* \background-color: aqua; */
 }
 
 .ocena>.icon {
@@ -39,9 +75,10 @@
     align-items: center;
     background-color: rgb(192, 192, 192);
     width: 80%;
-    height: 50%;
+    height: 2vh;
     border-radius: 15px;
 }
+
 
 .percent {
     background-color: #f58807;
@@ -49,14 +86,106 @@
     height: 100%;
     text-align: right;
     border-radius: 15px;
-    font-size: 80%;
+    /* font-size: 80%; */
     font-weight: 400;
 }
 
-.tom{
+
+.tom {
     width: 69%;
 }
 
-.imdb{
+.imdb {
     width: 83%;
+}
+
+.video {
+    position: relative;
+    width: 98%;
+    height: 0px;
+    padding-bottom: 37%;
+    margin-left: 1%;
+    margin-right: 1%;
+    z-index: -1;
+}
+
+iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cast{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.person{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.person > .title{
+    margin: auto;
+    padding: auto;
+    font-size: 100%;
+    margin-left: 3vh;
+}
+.imgHolder{
+    display: inline-block;
+    width: 20vh ;
+    height: 20vh;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img{
+    max-width: 100%;
+}
+
+
+@media (max-width: 811px) and (orientation: portrait) {
+    .left {
+        height: 100%;
+        width: 100%;
+        border-bottom: 1px solid black;
+        margin-bottom: 2%;
+        position: relative;
+        top: 0px;
+    }
+
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .video {
+        height: auto;
+    }
+
+    .ocena>.icon {
+        height: 80%;
+        width: 40px;
+        padding: 0;
+    }
+
+    .main {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .cast{
+        justify-content: left;
+        margin-left: 3vh;
+    }
+    .person{
+        margin-top: 2vh;
+    }
+    .imgHolder{
+        width: 80px;
+        height: 80px;
+    }
+
 }
