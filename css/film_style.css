@@ -1,4 +1,4 @@
-.fix{
+.fix {
     position: fixed;
 }
 
@@ -11,7 +11,7 @@
 
 
 .left {
-    height: 100%;
+    height: calc(100% - 50px);
     width: 20%;
     /* border-right: 1px solid black; */
     position: fixed;
@@ -19,6 +19,7 @@
     bottom: 0;
     left: 0;
     right: 0;
+    overflow-y: scroll;
 }
 
 .main {
@@ -31,6 +32,25 @@
     box-sizing: border-box;
     width: 100%;
     height: auto;
+}
+
+.title {
+    color: beige;
+    font-weight: bold;
+    font-size: 3vh;
+    text-align: center;
+    text-shadow: 10px orange;
+}
+
+.text{
+    color: beige;
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+.left>.text {
+    display: flex;
+    justify-content: space-around;
 }
 
 .ocena {
@@ -70,10 +90,6 @@
     font-weight: 400;
 }
 
-/* .percent > p{
-    margin: 0;
-    vertical-align: middle;   
-} */
 
 .tom {
     width: 69%;
@@ -101,8 +117,37 @@ iframe {
     height: 100%;
 }
 
+.cast{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
-@media (max-width: 811px) {
+.person{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.person > .title{
+    margin: auto;
+    padding: auto;
+    margin-left: 3vh;
+}
+.imgHolder{
+    display: inline-block;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img{
+    max-width: 100%;
+}
+
+
+@media (max-width: 811px) and (orientation: portrait) {
     .left {
         height: 100%;
         width: 100%;
@@ -111,13 +156,15 @@ iframe {
         position: relative;
         top: 0px;
     }
-    .content{
+
+    .content {
         flex-wrap: wrap;
     }
 
-    .video{
+    .video {
         height: auto;
     }
+
     .ocena>.icon {
         height: 80%;
         width: 40px;
@@ -128,5 +175,16 @@ iframe {
         width: 100%;
         margin-left: 0%;
     }
-    
+    .cast{
+        justify-content: left;
+        margin-left: 3vh;
+    }
+    .person{
+        margin-top: 2vh;
+    }
+    .imgHolder{
+        width: 80px;
+        height: 80px;
+    }
+
 }
