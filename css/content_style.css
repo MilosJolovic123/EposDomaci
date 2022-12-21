@@ -1,19 +1,22 @@
-
 .content{
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+    align-items: stretch;
+    justify-content: stretch;
 }
 .film{
 display: flex;
 align-items: center;
 justify-content: center;
-  height: 50vh;
-  width: 30vh;
- flex-grow: 1;
+height: auto;
+width: 30vh;
+flex-grow: 1;
 
 
 }
+
+
 .film>a{
 visibility: hidden;
 position: absolute;
