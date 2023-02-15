@@ -11,11 +11,11 @@ function mOutImg(img,links){
 img.style.opacity="1";
 //links.style.visibility="hidden";
 }*/
-
 films.forEach(function(img,links){
         console.log(img.childNodes);
         // img.addEventListener("mouseover", mOverImg(img) );
         // img.addEventListener("mouseout", mOutImg(img) );
+        //var width = img.childNodes[3].
         img.addEventListener("mouseover", () =>{
             
             img.childNodes[1].style.opacity="0.5";
