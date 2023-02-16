@@ -9,7 +9,7 @@ body{
 }
 
 .nav{
-background-color: #252525;
+background-color:#252525;
 height: 50px;
 margin: 0px;
 display: flex;
@@ -22,11 +22,11 @@ z-index: 99;
 }
 
 .logotip{
-    background-color: #252525;
-    height: 50px;
+     height: 50px;
     margin: 0px;
     display: flex;
     align-items: center;
+   
 }
 
 .icon{
@@ -61,4 +61,5 @@ padding-left: 1%;
     font-size: 40px;
     font-weight: bold;
     color: #f58807;
+    text-decoration: none;
 }

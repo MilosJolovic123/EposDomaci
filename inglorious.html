@@ -1,114 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/nav_style.css">
-    <link rel="stylesheet" href="css/film_style.css">
-    <link rel="stylesheet" href="css/burger.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/nav_style.css" />
+    <link rel="stylesheet" href="css/film_style.css" />
+    <link rel="stylesheet" href="css/burger.css" />
+    <script href="node_modules/jquery/dist/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <title>INGLORIOUS BASTERDS</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="fix">
-        <div class="nav">
-            <div class="menu">
-                <img src="images/burger.png" alt="M" class="icon">
-            </div>
-
-            <div class="elements">
-                <input type="text" id="search_bar">
-                <div class="logotip">
-                    <p class="logo">IMBD</p>
-                    <img src="images/entertainment.png" alt="LOGO" class="icon">
-
-                </div>
-
-            </div>
+      <div class="nav">
+        <div class="menu">
+          <img src="images/burger.png" alt="M" class="icon" />
         </div>
+
+        <div class="elements">
+          <input type="text" id="search_bar" />
+          <div class="logotip">
+            <a href="index.html" class="logo">IMBD</a>
+            <img src="images/entertainment.png" alt="LOGO" class="icon" />
+          </div>
+        </div>
+      </div>
     </div>
     <div class="content">
-        <div class="left">
-            <img src="images/inglorious/inglorious_b.jpg" alt="FILM IMAGE" class="baner">
-            <div class="title">
-                INGLORIOUS BASTERDS
-            </div>
-            <div class="text">
-                <p>2h 33min</p>
-                <p>2019</p>
-            </div>
+      <div class="left">
+        <img
+          src="images/inglorious/inglorious_b.jpg"
+          alt="FILM IMAGE"
+          class="baner"
+        />
+        <div class="title">INGLORIOUS BASTERDS</div>
+        <div class="text">
+          <p>2h 33min</p>
+          <p>2019</p>
+        </div>
 
-            <div class="ocena">
-                <img src="images/rotten.png" alt="T" class="icon">
-                <div class="line">
-                    <div class="percent tom"></div>
-                </div>
-            </div>
-            <div class="ocena">
-                <img src="images/imdb3.png" alt="T" class="icon">
-                <div class="line">
-                    <div class="percent imdb"></div>
-                </div>
-            </div>
+        <div class="ocena">
+          <img src="images/rotten.png" alt="T" class="icon" />
+          <div class="line">
+            <div class="percent tom"></div>
+          </div>
         </div>
-        <div class="main">
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/KnrRy6kSFF0?modestbranding=1&autohide=1&showinfo=0&controls=0" title="YouTube video player" frameborder="0" 
-                    allowfullscreen></iframe>
-            </div>
-            <div class="cast">
-                <div class="person">
-                    <div class="imgHolder">
-                        <img src="images/inglorious/bradd.jpg" alt="NAN" class="img">
-                    </div>
-                    <p class="title">Brad Pitt</p>
-                </div>
-                <div class="person">
-                    <div class="imgHolder">
-                        <img src="images/inglorious/dianeKruger.jpg" alt="NAN" class="img">
-                    </div>
-                    <p class="title">Diane Kruger</p>
-                </div>
-                <div class="person">
-                    <div class="imgHolder">
-                        <img src="images/inglorious/eliRoth.jpg" alt="NAN" class="img">
-                    </div>
-                    <p class="title">Eli Roth</p>
-                </div>
-            </div>
-            <div class="info">
-                <h3>Synopsis</h3>
-                <p>In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish
-                    U.S. soldiers coincides with a theatre owner's vengeful plans for the same.</p>
-            </div>
-            <div class="comments">
-                <form action="" class = "comment">
-                    <label for="nameBox">Username:</label>
-                    <input type="text" name="name" id="nameBox">
-                    <label for="nameBox">Comment:</label>
-                    <textarea name="comment" id="comment" cols="100%" rows="4"></textarea>
-                    <input type="button" value="Add comment" id="addComment">
-                </form>
-                <script src="javascript/comments.js"></script>
-            </div>
+        <div class="ocena">
+          <img src="images/imdb3.png" alt="T" class="icon" />
+          <div class="line">
+            <div class="percent imdb"></div>
+          </div>
         </div>
+      </div>
+      <div class="main">
+        <div class="video">
+          <iframe
+            src="https://www.youtube.com/embed/KnrRy6kSFF0?modestbranding=1&autohide=1&showinfo=0&controls=0"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="cast">
+          <div class="person">
+            <div class="imgHolder">
+              <img src="images/inglorious/bradd.jpg" alt="NAN" class="img" />
+            </div>
+            <p class="title">Brad Pitt</p>
+          </div>
+          <div class="person">
+            <div class="imgHolder">
+              <img
+                src="images/inglorious/dianeKruger.jpg"
+                alt="NAN"
+                class="img"
+              />
+            </div>
+            <p class="title">Diane Kruger</p>
+          </div>
+          <div class="person">
+            <div class="imgHolder">
+              <img src="images/inglorious/eliRoth.jpg" alt="NAN" class="img" />
+            </div>
+            <p class="title">Eli Roth</p>
+          </div>
+        </div>
+        <div class="info">
+          <h3>Synopsis</h3>
+          <p>
+            In Nazi-occupied France during World War II, a plan to assassinate
+            Nazi leaders by a group of Jewish U.S. soldiers coincides with a
+            theatre owner's vengeful plans for the same.
+          </p>
+        </div>
+        <div class="comments">
+          <form action="" class="comment">
+            <label for="nameBox">Username:</label>
+            <input type="text" name="name" id="nameBox" />
+            <label for="nameBox">Comment:</label>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="100%"
+              rows="4"
+            ></textarea>
+            <input type="button" value="Add comment" id="addComment" />
+          </form>
+          <script src="javascript/comments.js"></script>
+        </div>
+      </div>
     </div>
-        
-    
+
     <div class="burger hide">
-        <div class="textHolder hide">
-            <a href="index.html" class="text hide">HOME</a>
-        </div>
-        <div class="textHolder hide">
-            <a href="" class="text hide">ABOUT US</a>
-        </div>
-        <div class="textHolder hide">
-            <a href="" class="text hide">NEWS LETTER</a>
-        </div>
+      <div class="textHolder hide">
+        <a href="index.html" class="text hide">HOME</a>
+      </div>
+      <div class="textHolder hide">
+        <a href="" class="text hide">ABOUT US</a>
+      </div>
+      <div class="textHolder hide">
+        <a href="index.html" class="text hide">NEWSLETTER</a>
+      </div>
     </div>
     <script src="javascript/burger.js"></script>
-</body>
-
+  </body>
 </html>
