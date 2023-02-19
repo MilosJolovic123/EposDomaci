@@ -17,8 +17,12 @@ function getInputValue(){
         $("#ip").addClass("wrong");
         correct = false;
     }
-    if(mail == ""  || !mail.includes("@") || mail.length < 5){
+    if(mail == "" || !mail.includes("@") || mail.length < 5){
         $("#mail").addClass("wrong");
+        correct = false;
+    }
+    if( date == ""){
+        $("#datum").addClass("wrong");
         correct = false;
     }
     console.log(pol);
@@ -26,9 +30,7 @@ function getInputValue(){
     if(correct)
     window.alert('Name : '+ime+'\n Gender : '+pol+'\n Mail address: ' + mail+
     '\n Date : '+day+'-'+month+'-'+year+
-    '\n Your feedback : '+tekst
-
-    )
+    '\n Your feedback : '+tekst)
 }
 
 
